@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses>
+		
+	<course>
+		<date>Fall 2016</date>
+		<courseID>IT 223</courseID>
+		<description>Security Fundamentals</description>
+		<highlight>Used Wireshark to capture packets and observe network packets</highlight>
+	</course>
+	
+	<course>
+		<date>Spring 2017</date>
+		<courseID>IT 102</courseID>
+		<description>Discrete Structures</description>
+		<highlight>Learned about circuits, logic math,  Python, and recursion.</highlight>
+	</course>
+		
+	
+	<course>
+		<date>Spring 2017</date>
+		<courseID>IT 214</courseID>
+		<description>Database Fundamentals</description>
+		<highlight>Developed a database to track students and employees in a University using Visio and MySQL.</highlight>
+	</course>
+	
+	<course>
+		<date>Fall 2017</date>
+		<courseID>IT 300</courseID>
+		<description>Modern Telecommunications</description>
+		<highlight>Gained understanding in Basic Signals, Systems, Analog, and Digital Communications.</highlight>
+	</course>
+	
+	<course>
+	
+		<date>Fall 2017</date>
+		<courseID>IT 343</courseID>
+		<description>Project Management</description>
+		<highlight>Used Microsoft Project to create a plan for project. As the PM of team, led team on research and presentation of Singapore Tradenet Case Study.</highlight>
+	</course>
+	
+	
+	<course>
+		<date>Spring 2018</date>
+		<courseID>IT 206</courseID>
+		<description>Object Oriented Techniques for IT Problem Solving</description>
+		<highlight>Used Java programming language to design solutions for business problems including, constructing, testing, and implementing Object Oriented analysis and design.</highlight>
+	</course>
+	
+	<course>
+		<date>Spring 2018</date>
+		<courseID>IT 331</courseID>
+		<description>Web Development</description>
+		<highlight>Gained understanding in advanced Web design principles and technologies. Created web pages with emergeing technologies such as, HTML, CSS, JavaScript, DOM, XML, and AJAX.
+		</highlight>
+	</course>
+	
+</courses>

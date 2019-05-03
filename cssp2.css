@@ -1,0 +1,41 @@
+/*css*/
+
+@-ms-viewport{width: device-width;
+
+}
+ 
+
+nav{padding: 0 0px 0px;margin: 0; width: 100%;background-color: #ccc;border: solid 1px;}
+
+ 
+
+ul{text-align: center;margin: 0px;postion: absolute;}
+
+ 
+
+li{display: inline; list-style-type: none;height: 4px;}
+
+ 
+
+li a{text-align: center;text-decoration: none; padding: 14px 16px;line-height: 2em;font-family: arial;}
+
+ 
+
+li a:hover {text-decoration: overline;}
+
+ 
+
+li a:link {color: #222;}
+
+ 
+
+h1{position: absolute;margin: 0;}
+
+ 
+
+#h{float: left;}
+
+#bdi{margin: 0px;height: 760px;border: solid 2px;}
+
+#1{width: 50%;height 40%;}
+ 

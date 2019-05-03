@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script>
+	/*	for(var x = 1;x<=100;x++){
+			var a = 3;
+			var b = 8;
+	document.write(Math.floor(3+Math.random()*4)+"<br>");	
+		}*/
+		
+	//var a = [1,2,3,4,5];
+	//	var a = ["7", "4", "100", "2","10"];
+		//a.sort(compareNumber);
+		//for (var i in a )
+		
+			//document.write(a.join(" "));
+		      //  function compareNumber( v1, v2 )
+	        //{   
+              //      return v1 - v2; 
+            // }
+
+		
+		//}
+		/*for (var product = 0; product <= 25; product++ )
+
+product += 2;
+
+document.write(product );
+		var grade = 60 ;
+
+if ( grade >= 60 )
+
+     document.writeln( "Passed." );
+
+else
+
+     document.write( "Failed. " );
+
+document.writeln( "You must take this course again." );
+		
+		for ( var count = 1; count <= 10; ++count ) {
+
+if ( count == 5 )
+
+break;
+
+}
+
+document.writeln( count );
+		var i = 0;
+
+do {
+
+document.write( "O" );
+
+i++;
+
+} while ( i > 5 );
+		
+		var number = 6, x = 6;
+
+number *= x++;
+		document.write(number);*/
+		
+		function start(){
+			var button = document.getElementById("button");
+			button.addEventListener("click", buttonPressed, false);
+		}
+		function buttonPressed(){
+			var school = document.getElementById('school');
+			school.value = "Mason";
+			}
+		var a = document.getElementById("button");
+		window.addEventListener("load", start, false);
+	</script>
+</head>
+
+<body>
+	<form>
+		<label for ="textfield">text field: </label>
+		
+	<input type="text" name="school" id="school">	
+	<input type="button" name="button" id="button" value="Button">
+		
+    </form>
+</body>
+</html>

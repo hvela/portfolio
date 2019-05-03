@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses>
+	<course>
+		<date>Summer 2016</date>
+		<courseID>IT 191</courseID>
+		<description>Internet and World Wide Web</description>
+		<highlight>Fundamentals of general IT</highlight>
+	</course>
+	
+	<course>
+		<date>Fall 2016</date>
+		<courseID>IT 223</courseID>
+		<description>Security Fundamentals</description>
+		<highlight>Used Wireshark to capture packets and observe network packets</highlight>
+	</course>
+	
+	<course>
+		<date>Spring 2017</date>
+		<courseID>IT 102</courseID>
+		<description>Discrete Structures</description>
+		<highlight>Learned about circuits, logic math,  Python, and recursion.</highlight>
+	</course>
+	
+	
+	
+	<course>
+		<date>Spring 2017</date>
+		<course>IT 214</course>
+		<description>	Database Fundamentals</description>
+		<highlight>Developed a database to track students and employees in a University using Visio and MySQL.</highlight>
+	</course>
+	
+</courses>
