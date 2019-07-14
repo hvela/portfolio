@@ -1,0 +1,24 @@
+<travels>
+    <trav>
+        <img>images/inca.jpg</img>
+        <alt>image 4</alt>
+    </trav>
+    <trav>
+        <img>images/ceviche.jpg</img>
+        <alt>image 5</alt>
+    </trav>
+    <trav>
+        <img>images/smoothies.jpg</img>
+        <alt>image 6</alt>
+    </trav>
+    
+</travels>
+
+{"images":[
+            {"image":"inca.jpg"},
+            {"image":"ceviche.jpg"},
+            {"image": "smoothies.jpg"}
+
+
+        ]
+}

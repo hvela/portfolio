@@ -1,0 +1,15 @@
+<travels>
+    <trav>
+        <img>images/image.png</img>
+        <alt>image</alt>
+    </trav>
+    <trav>
+        <img>images/image2.png</img>
+        <alt>image2</alt>
+    </trav>
+    <trav>
+        <img>images/image3.jpg</img>
+        <alt>image3</alt>
+    </trav>
+    
+</travels>

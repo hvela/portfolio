@@ -1,0 +1,11 @@
+{
+    "images": [
+        { "image": "images/inca.jpg" },
+        { "image": "images/ceviche.jpg" },
+        { "image": "images/smoothies.jpg" },
+        { "image": "images/alfredo.PNG" },
+        { "image": "data/inca.jpg" }
+
+
+    ]
+}
