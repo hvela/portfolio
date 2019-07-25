@@ -26,81 +26,6 @@
         }
     </style>
 
-    <!-- <script>
-        function a() {
-            const Http = new XMLHttpRequest();
-            const url = 'https://icanhazdadjoke.com/';
-            var joke = Http.open("GET", url);
-            Http.setRequestHeader("Accept", "text/plain")
-            Http.send();
-            Http.onreadystatechange = (e) => {
-                // console.log(Http.responseText)
-                document.getElementById("content").innerHTML = (Http.responseText);
-
-            }
-        }
-
-        function b() {
-
-            const Http = new XMLHttpRequest();
-            const url = 'data/the_food.json';
-            var json = Http.open("GET", url);
-
-
-            Http.setRequestHeader("Accept", "text/plain")
-            Http.send();
-            Http.onreadystatechange = (e) => {
-                // console.log(Http.responseText)
-                document.getElementById("here").innerHTML = (Http.responseText);
-
-
-
-
-            }
-
-
-        } -->
-    </script>
-    <!-- // function start() 
-        { // document.getElementById("travel").addEventListener("click", function() { // getCourses("data/city.xml"); 
-        // }, false); 
-        // document.getElementById("food").addEventListener("click", function() { 
-            // getCourses("data/food.xml"); //
-    }, false); 
-    // } 
-    // function getCourses(url) { 
-        // try { // asyncRequest = new XMLHttpRequest(); 
-            // asyncRequest.addEventListener("readystatechange", processResponse, false); 
-            // asyncRequest.open("GET", url, true); // // asyncRequest.responseType =
-    'json'; // asyncRequest.send(); // } catch (exception) { // alert("Request Failed"); 
-
-    
- } // sample 
- /sample // 
- function processResponse() { // 
-    if (asyncRequest.readyState == 4 && asyncRequest.status == 200) {
-         // var myObj = asyncRequest.responseType;
-    // document.getElementById("food").innerHTML = myObj;
-     // var tras = asyncRequest.responseXML.getElementsByTagName("trav"); 
-     // clearContents(); // var output = document.getElementById("content"); 
-     // var ulT = document.createElement("ul");
-      // for (vari = 0; i< myObj.length; ++i) {
-           // var tra=t ras.item(i);
-            // var imgLink=t ra.myObj.images[i].image( "image"); 
-            // var imgAlt=t ra.getElementsByTagName( "alt").item(0).firstChild.nodeValue; 
-            // var imageLI=d ocument.createElement( "li"); // var
-        singleImg=document.createElement( "img"); 
-        // singleImg.setAttribute( "src", imgLink); 
-        // singleImg.setAttribute( "alt", imgAlt); 
-        // singleImg.setAttribute( "class", "img-size");
-         // imageLI.appendChild(singleImg); 
-        // place img in li // ulT.appendChild(imageLI);
-    // place li in ul 
-    // /*Loading picture using jquery*/ 
-    // } // output.appendChild(ulT); // }
-    // } function clearContents() { document.getElementById( "content").innerHTML="" ; } window.addEventListener( "load", start, false);
- </script> -->
-
 </head>
 
 
@@ -134,9 +59,9 @@
             <div class="col-sm-12">
                 <div class="radio-button">
                     <input type="radio" name="travel" value="Travel" id="travel">Favorite places to travel<br>
-                    <input type="radio" name="travel" value="Travel" onclick="b()" id="food">Favorite foods<br>
+                    <input type="radio" name="travel" value="Travel" id="food" onclick="get_pic()">Favorite food<br>
 
-                    <div id="here"></div>
+                    <div id="here"><img src="" alt=""></div>
                 </div>
             </div>
 
@@ -144,32 +69,30 @@
     </div>
 
     <script>
-        function b() {
-            fetch("data/the_food.json")
-                .then(response => response.json())
-                .then(json => document.getElementById('here') = (json.images[1].image))
+        // document.getElementById("food").addEventListener("click", getData)
 
-            // var imgList = "";
+        // function getData() {
+        //     var jcontent = {
+        //         "image": "data/inca.jpg",
+        //         "email": "iharoldd@yahoo.com"
+        //     }
+        //     var output = document.getElementById("here");
 
-            // imgList += '<li><img src="' + images[4].image + '"></li>';
-
-            // const Http = new XMLHttpRequest();
-            // const url = 'data/the_food.json';
-            // Http.open("GET", url, true);
-            // Http.responseType = 'json';
-
-
-
-            // Http.send();
+        //     output.innerHTML = jcontent.image;
+        // }
+        function get_pic() {
+            var src = "http://mason.gmu.edu/~hvelasqu/portfolio/data/inca.jpg";
+            show_image("http://mason.gmu.edu/~hvelasqu/portfolio/data/inca.jpg", 276, 110, "food");
+        }
 
 
-            // // Http.setRequestHeader("Accept", "text/plain")
-            // // Http.send();
-            // // Http.onreadystatechange = (e) => {
-            // var theObj = JSON.parse(this.responseText);
-            // // console.log(Http.responseText)
-            // document.getElementById("here").innerHTML = theObj.name;
-
+        function show_image(src, width, height, alt) {
+            var img = document.createElement("img");
+            img.src = src;
+            // img.width = width;
+            // img.height = height;
+            img.alt = alt;
+            document.body.appendChild(img);
         }
     </script>
 
