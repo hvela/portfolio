@@ -1,112 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact</title>
 
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 
-<!--Main css-->
-<link href = "main.css" rel ="stylesheet">
-<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
-<script>
-		function changeName(){
-			location.reload();
-			/*var checkValue=false;
-			do{
-				var name = window.prompt("Enter your first name");
-				if(name==null || name==""){
-					window.alert("Error! You must enter a name to change");
-				}else{
-					checkValue=true;
-					localStorage.setItem("name", name);
-					//document.getElementById("login").innerHTML="Hello "+name+", thank you for visiting my site";
-					
-					document.write("Hello "+localStorage.getItem("name")+", thank you for visiting my site");
-				}
-			}while(!checkValue);*/
-			//window.alert(localStorage.getItem("name"));
-			
-		}
-		
-		function loading(){
-			var checkValue=false;
-			do{
-				var name = window.prompt("Enter your first name: ");
-				if(name==null || name==""){
-					window.alert("Error! You must enter a name");
-				}else{
-					checkValue=true;
-					localStorage.setItem("name", name);
-					//document.getElementById("login").innerHTML="Hello "+name+", thank you for visiting my site";
-					document.write("<h4>Hello "+localStorage.getItem("name")+", thank you for visiting my site!</h4>");
-				}
-			}while(!checkValue);
-		}
-		//window.addEventListener("load",loading,false);
-		window.onload=loading();
-	</script>
+    <!--Main css-->
+    <link href="main.css" rel="stylesheet">
+    <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+    <link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
+    <script>
+        function changeName() {
+            location.reload();
+            /*var checkValue=false;
+            do{
+            	var name = window.prompt("Enter your first name");
+            	if(name==null || name==""){
+            		window.alert("Error! You must enter a name to change");
+            	}else{
+            		checkValue=true;
+            		localStorage.setItem("name", name);
+            		//document.getElementById("login").innerHTML="Hello "+name+", thank you for visiting my site";
+            		
+            		document.write("Hello "+localStorage.getItem("name")+", thank you for visiting my site");
+            	}
+            }while(!checkValue);*/
+            //window.alert(localStorage.getItem("name"));
+
+        }
+
+        function loading() {
+            var checkValue = false;
+            do {
+                var name = window.prompt("Enter your first name: ");
+                if (name == null || name == "") {
+                    window.alert("Error! You must enter a name");
+                } else {
+                    checkValue = true;
+                    localStorage.setItem("name", name);
+                    //document.getElementById("login").innerHTML="Hello "+name+", thank you for visiting my site";
+                    alert("Hello " + localStorage.getItem("name") + ", thank you for visiting my site!");
+                }
+            } while (!checkValue);
+        }
+        //window.addEventListener("load",loading,false);
+        window.onload = loading();
+    </script>
 </head>
+
 <body>
-	<div id="login"></div>
-<nav class="navbar navbar-default">
-  <div class="container-fluid"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-       <a class="navbar-brand" href="https://www.linkedin.com/in/harold-velasquez" id="theBrand" target="_blank">Harold Velasquez</a></div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="defaultNavbar1">
-			<ul class="nav navbar-nav">
-        <li ><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html">About</a></li>
-		  <li><a href="projects.html">Projects</a></li>
-		  <li class="active"><a href="contact.html">Contact</a></li>
-      <li><a href="tryit.html">Try It</a></li>
-      <li><a href="trymore.html">Try More</a></li>
-     	  <li><a href="resources.html">Resources</a></li>
-      </ul>
-    
-    </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-  <!-- /.container-fluid --> 
-</nav>
-<div class="container-fluid">
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h1 class="text-center">Please enter your contact information,</h1>
-  </div>
-</div>
-	<br>
-<div class="container">
-  <div class="row text-center">
-    <div class="col-md-6 col-md-offset-3">
-      <!-- the contact form-->
-      <form  method ="post" autocomplete="on" >
-	<fieldset id = "theForm">
- 
-  <p>
-    <label for="textfield">Company Name:</label>
-    <input type="text" name="textfield" id="companyname">
-  </p>
-  <label for="textfield2">POC Name:</label>
-  <input type="text" name="textfield2" pattern="^([a-zA-Z0-9)$" required="required" maxlength="10">
-  <p>
-    <label for="email">E-Mail Address:</label>
-    <input type="email" name="email" data-validation="email" id="email-validation" data-validation-error-msg="Invalid email"  data-validation-error-msg-container="#email-error-dialog">
-</p>
-	<label>What is the best day to contact you:  </label><br>
-		<input type="text" id="Datepicker1">
-<datalist id ="days" > 
+    <div id="login"></div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/harold-velasquez" id="theBrand" target="_blank">Harold Velasquez</a></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="defaultNavbar1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="tryit.html">Try It</a></li>
+                    <li><a href="trymore.html">Try More</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h1 class="text-center">Please enter your contact information,</h1>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3">
+                    <!-- the contact form-->
+                    <form method="post" autocomplete="on">
+                        <fieldset id="theForm">
+
+                            <p>
+                                <label for="textfield">Company Name:</label>
+                                <input type="text" name="textfield" id="companyname">
+                            </p>
+                            <label for="textfield2">POC Name:</label>
+                            <input type="text" name="textfield2" pattern="^([a-zA-Z0-9)$" required="required" maxlength="10">
+                            <p>
+                                <label for="email">E-Mail Address:</label>
+                                <input type="email" name="email" data-validation="email" id="email-validation" data-validation-error-msg="Invalid email" data-validation-error-msg-container="#email-error-dialog">
+                            </p>
+                            <label>What is the best day to contact you:  </label><br>
+                            <input type="text" id="Datepicker1">
+                            <datalist id="days"> 
   <option value = "Monday"></option>
 	  <option value = "Tuesday"></option>
 		  <option value = "Wednesday"></option>
@@ -114,119 +116,116 @@
 				  <option value = "Friday"></option>
 					  
 	  
-</datalist>  
-<br><br>
-<label>How would you rate my site?</label>
-<select name="menu" >
+</datalist>
+                            <br><br>
+                            <label>How would you rate my site?</label>
+                            <select name="menu">
 	<option  value = "disable selected hidden" >-Choose One-</option>
     <option value>Good</option>
     <option value>Fair</option>
     <option value>Poor</option>
 	
   </select>
-	  <br><br>
-    <label for="textarea">Comments?</label>
-	  <br><br>
-	  
-	  
-    <textarea name="commments" placeholder= "Place your comment here" id="textarea"></textarea>
- 
-  
-  <p>Would you like a copy of my resume?</p>
- 
+                            <br><br>
+                            <label for="textarea">Comments?</label>
+                            <br><br>
 
-	  <label>
+
+                            <textarea name="commments" placeholder="Place your comment here" id="textarea"></textarea>
+
+
+                            <p>Would you like a copy of my resume?</p>
+
+
+                            <label>
 	    <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0">
 	    Yes</label>
-	  <br>
-	  <label>
+                            <br>
+                            <label>
 	    <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">
 	    No</label>
-	 
-		
-		<br><br>
-	<input  type="submit" class="theButton"> <input type="reset" class="theButton">
-</fieldset>
-</form>
-<!--end form-->
+
+
+                            <br><br>
+                            <input type="submit" class="theButton"> <input type="reset" class="theButton">
+                        </fieldset>
+                    </form>
+                    <!--end form-->
+                </div>
+
+            </div>
+            <button onclick="toOpen()" id="schedule">Click here for my current schedule!</button><br><br>
+            <button onclick="changeName()" id="chgname">Click here to change your name</button>
+            <script>
+                function toOpen() {
+                    window.open("schedule");
+                }
+            </script>
+            <hr>
+            <a href="mailto:hvelasqu@gmu.edu">Email me instead?</a>
+            <div class="row">
+                <div class="text-center col-md-6 col-md-offset-3">
+
+                    <p>Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="resources.html">Click here for disclaimer.</a></p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery-1.11.3.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
     </div>
-	  
-  </div>
-	<button onclick ="toOpen()" id = "schedule">Click here for my current schedule!</button><br><br>
-	<button onclick = "changeName()" id="chgname">Click here to change your name</button>
-	<script>
-		function toOpen(){
-		window.open("schedule");
-	}
-	</script>
-			<hr>
-  <a href="mailto:hvelasqu@gmu.edu">Email me instead?</a>
-  <div class="row">
-    <div class="text-center col-md-6 col-md-offset-3">
-     
-      <p>Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="resources.html">Click here for disclaimer.</a></p>
-    </div>
-  </div>
-  <hr>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.3.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.js"></script>
-</div>
-
-	<script src="jQueryAssets/jquery-1.11.1.min.js"></script> 
-	<script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script> 
-	<script type="text/javascript">
-			var j1104 = jQuery.noConflict(true);
-		</script> 
-	<script type="text/javascript">
-
-			j1104(function() {
-				j1104( "#Datepicker1" ).datepicker({
-					showOn:"both",
-					numberOfMonths:2,
-					showAnim:"slideDown"
-				}); 
-			});
-		 </script>
+    <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+    <script src="jQueryAssets/jquery.ui-1.10.4.datepicker.min.js"></script>
+    <script type="text/javascript">
+        var j1104 = jQuery.noConflict(true);
+    </script>
+    <script type="text/javascript">
+        j1104(function() {
+            j1104("#Datepicker1").datepicker({
+                showOn: "both",
+                numberOfMonths: 2,
+                showAnim: "slideDown"
+            });
+        });
+    </script>
 
 
-	<!--AutoComplete-->
-	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
-	<script type="text/javascript">	
-			var j124=jQuery.noConflict(true);
-	</script> 
-	<script type="text/javascript">
-		/*Hidden and show the input for different school*/
-					
-
-					j124(function(){
-						var school=["Deloitte","General Dynamics","Fairfax County","Northrop Grumman"];
-						j124("#companyname").autocomplete({
-							source:school
-						});
-					});
+    <!--AutoComplete-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+        var j124 = jQuery.noConflict(true);
+    </script>
+    <script type="text/javascript">
+        /*Hidden and show the input for different school*/
 
 
-	</script>
+        j124(function() {
+            var school = ["Deloitte", "General Dynamics", "Fairfax County", "Northrop Grumman"];
+            j124("#companyname").autocomplete({
+                source: school
+            });
+        });
+    </script>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-	<script type="text/javascript">
-		var j102 = jQuery.noConflict(true);
-	</script> 
-<script type="text/javascript">
-	j102.validate({
-			modules:'html5'
-	});
-	
-	</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script type="text/javascript">
+        var j102 = jQuery.noConflict(true);
+    </script>
+    <script type="text/javascript">
+        j102.validate({
+            modules: 'html5'
+        });
+    </script>
 
 
 </body>
+
 </html>
