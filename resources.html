@@ -1,118 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Resources</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resources</title>
 
-			  
-	
-<!-- Bootstrap -->
-<link href="css/bootstrap.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-<link href = "main.css" rel ="stylesheet">
-<!--
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <link href="main.css" rel="stylesheet">
+    <!--
 <script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/architects-daughter:n4:default;aguafina-script:n4:default;covered-by-your-grace:n4:default.js" type="text/javascript"></script>
 -->
-	<script>
-	// Set the date we're counting down to
-var countDownDate = new Date("May 16, 2019 15:37:25").getTime();
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 16, 2019 15:37:25").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+        // Update the count down every 1 second
+        var x = setInterval(function() {
 
-    // Get todays date and time
-    var now = new Date().getTime();
-    
-    // Find the distance between now an the count down date
-    var distance = countDownDate - now;
-    
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-    // Output the result in an element with id="demo"
-    document.getElementById("demo").innerHTML =" I graduate in: "+ days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s";
-    
-    // If the count down is over, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-}, 1000);
-	</script>
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = " I graduate in: " + days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 </head>
+
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-      <a class="navbar-brand" href="https://www.linkedin.com/in/harold-velasquez" id="theBrand" target="_blank">Harold Velasquez</a></div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav">
-        <li ><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="about.html">About</a></li>
-		  <li><a href="projects.html">Projects</a></li>
-		  <li><a href="contact.html">Contact</a></li>
-      <li><a href="tryit.html">Try It</a></li>
-      <li><a href="trymore.html">Try More</a></li>
-     	  <li class="active"><a href="resources.html">Resources</a></li>
-      </ul>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#defaultNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/harold-velasquez" id="theBrand" target="_blank">Harold Velasquez</a></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="defaultNavbar1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="tryit.html">Try It</a></li>
+                    <li><a href="trymore.html">Try More</a></li>
+                    <li class="active"><a href="resources.html">Resources</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="container-fluid">
+        <div class="row"></div>
+        <div class="col-md-6 col-md-offset-3"> </div>
+    </div>
+    <div class="container">
+        <div class="row text-center"></div>
+        <div class="row"></div>
+        <div class="row">
+            <div class="text-center col-md-12">
+                <p>“this website is developed as an educational project”. If any copyrighted materials are included in accordance to the multimedia fair use guidelines, a notice should be added and states that “certain materials are included under the fair
+                    use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use”.</p>
+            </div>
+        </div>
+
+
+
+
+        <hr>
+        <div>
+            <h1 id="demo"> </h1>
+            <h1>Some References,</h1>
+            <ul id="references">
+                <li>
+                    <p>Home - Java picture: retrieved on 2/21/2018 from: <a href="https://commons.wikimedia.org/wiki/File:%D0%9B%D0%BE%D0%B3%D0%BE_%D0%B6%D0%B0%D0%B2%D0%B0.png">Here</a></p>
+                </li>
+                <li>
+                    <p>Home - Web Development picture: retrieved on 2/21/2018 from: <a href="https://commons.wikimedia.org/wiki/File:CSS3_and_HTML5_logos_and_wordmarks.svg">Here</a></p>
+                </li>
+                <li>
+                    <p>Home - Server Side picture: retrieved on 2/21/2018 from: <a href="https://commons.wikimedia.org/wiki/File:PHP_Logo.png">Here</a></p>
+                </li>
+
+                <li>
+                    <p>About - Arrow picture: retrieved on 2/21/2018 from: <a href="https://commons.wikimedia.org/wiki/File:Curved_Arrow.svg">Here</a></p>
+                </li>
+                <li>
+                    <p>About - Ben Franklin Quote: retrieved on 2/21/2018 from:
+                        <a href="http://quonation.com/quote/1210">Here</a></p>
+                </li>
+
+                <li>
+                    <p>Resources - W3C picture: retrieved on 2/22/2018 from: <a href="https://www.w3.org/Icons/valid-html401">Here</a></p>
+                </li>
+
+
+            </ul>
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="text-center col-md-6 col-md-offset-3">
+
+
+                <p>Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="resources.html">Click here for disclaimer.</a></p>
+                <a href="https://validator.w3.org/" target="_blank"><img src="w3cvalidated.png" alt="w3c" width="88" height="31"></a>
+                <p>&nbsp;</p>
+            </div>
+        </div>
+        <hr>
+        <div id="myButton">
+            <input type="radio" name="someFood" value="somFood" id="food" onclick="getImages()">Favorite food<br>
+        </div>
+
     </div>
 
-  </div>
-  
-</nav>
-<div class="container-fluid">
-  <div class="row"></div>
-  <div class="col-md-6 col-md-offset-3"> </div>
-</div>
-<div class="container">
-  <div class="row text-center"></div>
-  <div class="row"></div>
-  <div class="row">
-    <div class="text-center col-md-12"> <p>“this website is developed as an educational project”. If any copyrighted materials are included in accordance to the multimedia fair use guidelines, a notice should be added and states that “certain materials are included under the fair use exemption of the U.S. Copyright Law and have been prepared according to the multimedia fair use guidelines and are restricted from further use”.</p></div>
-  </div>
-	
-<hr>
-	<div>
-	  <h1 id="demo"> </h1>
-	  <h1>Some References,</h1>
-		<ul id = "references">
-	  <li><p>Home - Java picture: retrieved on 2/21/2018 from: <a href="https://commons.wikimedia.org/wiki/File:%D0%9B%D0%BE%D0%B3%D0%BE_%D0%B6%D0%B0%D0%B2%D0%B0.png">Here</a></p></li>
-	  <li><p>Home - Web Development picture: retrieved on 2/21/2018 from: <a href="https://commons.wikimedia.org/wiki/File:CSS3_and_HTML5_logos_and_wordmarks.svg">Here</a></p></li>
-	  <li><p>Home - Server Side picture: retrieved on 2/21/2018 from: <a href="https://commons.wikimedia.org/wiki/File:PHP_Logo.png">Here</a></p></li>
-	
-	 <li><p>About - Arrow picture: retrieved on 2/21/2018 from: <a href="https://commons.wikimedia.org/wiki/File:Curved_Arrow.svg">Here</a></p></li>
-		<li><p>About - Ben Franklin Quote: retrieved on 2/21/2018 from: 
-			<a href="http://quonation.com/quote/1210">Here</a></p></li>
-			
-			<li><p>Resources - W3C picture: retrieved on 2/22/2018 from: <a href="https://www.w3.org/Icons/valid-html401">Here</a></p></li>
-																			
+    <div id="aqui">
 
-		</ul>	
-	</div>
-  <div class="row">
-    <div class="text-center col-md-6 col-md-offset-3">
-      <p>Copyright &copy; 2018 &middot; All Rights Reserved &middot; <a href="resources.html">Click here for disclaimer.</a></p>
-      <a href="https://validator.w3.org/" target="_blank"><img src="w3cvalidated.png" alt="w3c" width="88" height="31"></a>
-      <p>&nbsp;</p>
     </div>
-  </div>
-  <hr>
-</div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-1.11.3.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.3.min.js"></script>
 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/bootstrap.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+
+
+
 </body>
+
 </html>

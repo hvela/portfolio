@@ -12,6 +12,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+    <!-- sweet alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <!--Main css-->
     <link href="main.css" rel="stylesheet">
@@ -19,6 +21,8 @@
     <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
     <link href="jQueryAssets/jquery.ui.datepicker.min.css" rel="stylesheet" type="text/css">
     <script>
+        import swal from 'sweetalert';
+
         function changeName() {
             location.reload();
             /*var checkValue=false;
@@ -48,7 +52,7 @@
                     checkValue = true;
                     localStorage.setItem("name", name);
                     //document.getElementById("login").innerHTML="Hello "+name+", thank you for visiting my site";
-                    alert("Hello " + localStorage.getItem("name") + ", thank you for visiting my site!");
+                    swal("Hello " + localStorage.getItem("name") + ", thank you for visiting my site!");
                 }
             } while (!checkValue);
         }
