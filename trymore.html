@@ -58,7 +58,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="radio-button">
-                    <input type="radio" name="travel" value="Travel" id="travel" onclick="getVacation()">Favorite places to travel<br>
+                    <input type="radio" name="travel" value="Travel" id="travel">Favorite places to travel<br>
                     <input type="radio" name="travel" value="Travel" id="food" onclick="getFood()">Favorite food<br>
 
                     <div id="foodspace"><img src="" alt=""></div>
@@ -70,25 +70,23 @@
     </div>
 
     <script>
-        function getFood() {
+        // document.getElementById("travel").addEventListener("click", getVacation);
+        document.getElementById('food').onclick =
 
-            // create flag
-            var flag = true;
+            function getFood() {
+                //create the json
+                var myJson = {
+                    picture: [
+                        "http://mason.gmu.edu/~hvelasqu/portfolio/data/inca.jpg",
+                        "http://mason.gmu.edu/~hvelasqu/portfolio/data/ceviche.jpg",
+                        "https://images-gmi-pmc.edge-generalmills.com/2dc58c2e-3d2d-4797-8866-a21964b55921.jpg",
+                        "https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco/https://storage.googleapis.com/gen-atmedia/3/2017/10/c54907276a7cb6e0545ae2128bdc984e86b6cb9d.jpeg"
 
-            //create the json
-            var myJson = {
-                picture: [
-                    "http://mason.gmu.edu/~hvelasqu/portfolio/data/inca.jpg",
-                    "http://mason.gmu.edu/~hvelasqu/portfolio/data/ceviche.jpg",
-                    "https://images-gmi-pmc.edge-generalmills.com/2dc58c2e-3d2d-4797-8866-a21964b55921.jpg",
-                    "https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco/https://storage.googleapis.com/gen-atmedia/3/2017/10/c54907276a7cb6e0545ae2128bdc984e86b6cb9d.jpeg"
+                    ]
+                }
 
-                ]
-            }
-
-            //this has the json url
-            for (i = 0; i < myJson.picture.length; i++) {
-                if (flag == true) {
+                //this has the json url
+                for (i = 0; i < myJson.picture.length; i++) {
                     var img = document.createElement("img");
                     // get each img source url
                     img.src = myJson.picture[i];
@@ -97,45 +95,48 @@
 
                     var togo = document.getElementById("foodspace");
                     togo.appendChild(img);
-                }
-            }
-            flag = false;
 
-        }
+                }
+                this.disabled = true;
+
+            }
 
         // this one will get fav places to travel
-        function getVacation() {
+        document.getElementById('travel').onclick =
 
-            // create flag
-            var flag = true;
+            function getVacation() {
 
-            //create the json
-            var myJson = {
-                picture: [
-                    "https://images.musement.com/cover/0002/49/thumb_148242_cover_header.jpeg?w=1200&h=630&q=60&fit=crop",
-                    "https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VC_CelebSpotting_Stock_RM_FTD9AK_1280x640.jpg",
-                    "https://tellanto.com/wp-content/uploads/2018/10/San-Miguel-Lima-.jpg",
-                    "https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco/https://storage.googleapis.com/gen-atmedia/3/2017/10/c54907276a7cb6e0545ae2128bdc984e86b6cb9d.jpeg"
+                // create flag
+                var flag = true;
 
-                ]
-            }
+                //create the json
+                var myJson = {
+                    picture: [
+                        "https://images.musement.com/cover/0002/49/thumb_148242_cover_header.jpeg?w=1200&h=630&q=60&fit=crop",
+                        "https://www.visitcalifornia.com/sites/default/files/styles/welcome_image/public/VC_CelebSpotting_Stock_RM_FTD9AK_1280x640.jpg",
+                        "https://tellanto.com/wp-content/uploads/2018/10/San-Miguel-Lima-.jpg",
+                        "https://image.cnbcfm.com/api/v1/image/105914852-1557935454894gettyimages-673632588.jpg?v=1557935515&w=630&h=420"
 
-            //this has the json url
-            for (i = 0; i < myJson.picture.length; i++) {
-                if (flag == true) {
-                    var img = document.createElement("img");
-                    // get each img source url
-                    img.src = myJson.picture[i];
-                    img.width = 300;
-                    img.height = 300;
-
-                    var togo = document.getElementById("travelspace");
-                    togo.appendChild(img);
+                    ]
                 }
-            }
-            flag = false;
 
-        }
+                //this has the json url
+                if (flag === true) {
+                    for (i = 0; i < myJson.picture.length; i++) {
+
+                        var img = document.createElement("img");
+                        // get each img source url
+                        img.src = myJson.picture[i];
+                        img.width = 300;
+                        img.height = 300;
+
+                        var togo = document.getElementById("travelspace");
+                        togo.appendChild(img);
+                    }
+                }
+                this.disabled = true;
+
+            }
     </script>
 
 
