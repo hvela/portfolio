@@ -94,25 +94,35 @@
         window.addEventListener("load", start, false);
     </script>
 
-    <button onclick="myFunction()" id="he">Try it</button>
-    <button onclick="resetCrawling()" id="he2">Reset</button>
-    <div id="hehe"></div>
-    <script>
-        var autoCrawling;
+    <button onclick="myFunction()" id="he">Start</button>
+    <button onclick="resetCrawling()" id="he2">Restart</button>
+    <!-- <button onclick="stopCrawling()" id="he3">Stop</button> -->
 
-        function myFunction() {
-            var print = document.getElementById("hehe");
-            autoCrawling = setInterval(function() {
-                print.innerHTML += "CRAWLING WEBPAGE";
-            }, 1000);
-        }
+    <div id="hehe">
+        <script>
+            var autoCrawling;
 
-        function resetCrawling() {
-            clearInterval(autoCrawling);
-            document.getElementById("hehe").innerHTML = "";
-        }
-    </script>
+            function myFunction() {
+                var print = document.getElementById("hehe");
+                if
+                autoCrawling = setInterval(function() {
+                    print.innerHTML += "CRAWLING WEBPAGE {} ";
+                }, 1000);
+            }
 
+            function resetCrawling() {
+                clearInterval(autoCrawling);
+                document.getElementById("hehe").innerHTML = "";
+            }
+
+            function stopCrawling() {
+                clearInterval(autoCrawling);
+                document.getElementById("hehe").innerHTML += "few";
+                return false;
+
+            }
+        </script>
+    </div>
 </body>
 
 </html>
